@@ -1,0 +1,19 @@
+.addExp{
+    margin-top: 20px;
+    padding: 20px;
+    width: 100%;
+    border: 1px dashed #FBB848;
+    border-radius: 20px;
+    font-weight: 700;
+    color: #2b3035;
+}
+.detail-btn{
+    text-decoration: none;
+
+}
+.detail-btn:hover {
+    color: white;
+}
+.addExp > span{
+    font-size: 2rem;
+}

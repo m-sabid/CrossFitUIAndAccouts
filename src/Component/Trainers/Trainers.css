@@ -1,0 +1,80 @@
+.trainers-t-h1 {
+    font-size: 70px;
+    line-height: 110px;
+}
+
+.trainers-t-p {
+    font-size: 25px;
+    margin-top: 8rem;
+}
+
+.get-start-btn {
+    background-color: #f04f23;
+    border: 1px solid #f04f23;
+    border-radius: 5px;
+    color: #fff;
+    font-family: Roboto, sans-serif;
+    font-size: 19px;
+    font-weight: 600;
+    padding: 10px 42px;
+}
+
+.trainers-g-b {
+    margin-left: -270px;
+}
+
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .trainers-t-h1 {
+        font-size: 38px;
+        line-height: 65px;
+    }
+
+
+    .trainers-t-p {
+        font-size: 23px;
+        margin-top: 2rem;
+
+    }
+
+    .trainers-g-b {
+        margin-left: 0;
+    }
+
+}
+
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .trainers-t-h1 {
+        font-size: 45px;
+        line-height: 80px;
+    }
+
+    .trainers-t-p {
+        font-size: 23px;
+        margin-top: 4rem;
+    }
+
+    .trainers-g-b {
+        margin-left: -85px;
+    }
+}
+
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .trainers-t-h1 {
+        font-size: 60px;
+        line-height: 110px;
+    }
+
+    .trainers-t-p {
+        font-size: 26px;
+        margin-top: 8rem;
+    }
+
+    .trainers-g-b {
+        margin-left: -200px;
+    }
+}

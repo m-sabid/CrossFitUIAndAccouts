@@ -1,0 +1,130 @@
+.test-grid {
+    grid-column-gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.card-flex {
+    display: flex;
+}
+
+.t-clint-img {
+    border-radius: 15px;
+    height: 227px;
+    width: 227px;
+}
+
+.black {
+    background: rgba(0, 0, 0, .7);
+    border-radius: 0 0 15px 15px;
+    height: 40px;
+    margin-top: -40px;
+    padding-top: 8px;
+    position: absolute;
+    width: 227px;
+}
+
+.comma-img {
+    margin-left: -290px;
+}
+
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .test-t-p {
+        color: #071b46;
+        font-size: 20px;
+        margin-top: 2rem;
+        padding: 0;
+        text-align: left;
+    }
+
+    .comma-img {
+        margin-left: -290px;
+        margin-top: 20px;
+    }
+
+    .test-grid {
+        grid-column-gap: 20px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .t-clint-img {
+        border-radius: 15px;
+        height: 227px;
+        width: 227px;
+    }
+
+    .black {
+        background: rgba(0, 0, 0, .7);
+        border-radius: 0 0 15px 15px;
+        height: 40px;
+        margin-top: -40px !important;
+        padding-top: 8px;
+        position: absolute;
+        width: 227px;
+    }
+
+    .card-flex {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .test-grid {
+        grid-column-gap: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .t-clint-img {
+        border-radius: 15px;
+        height: 180px;
+        width: 180px;
+    }
+
+    .black {
+        background: rgba(0, 0, 0, .7);
+        border-radius: 0 0 15px 15px;
+        height: 40px;
+        margin-left: 79px;
+        margin-top: -40px;
+        padding-top: 8px;
+        position: absolute;
+        width: 180px;
+    }
+
+    .comma-img {
+        margin-left: -290px;
+    }
+    .card-flex {
+        display: block;
+    }
+
+}
+
+
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+    .t-clint-img {
+        border-radius: 15px;
+        height: 200px;
+        width: 200px;
+    }
+
+    .comma-img {
+        margin-left: -220px;
+    }
+    
+    .black {
+        background: rgba(0,0,0,.7);
+        border-radius: 0 0 15px 15px;
+        height: 40px;
+        margin-top: -40px;
+        padding-top: 8px;
+        position: absolute;
+        width: 200px;
+    }
+
+}

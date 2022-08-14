@@ -1,0 +1,160 @@
+.banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url('../../../Image/Banner/banner-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 8rem;
+}
+
+.banner-btn {
+    background-color: #f04f23;
+    border: 1px solid #f04f23;
+    border-radius: 5px;
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: 700;
+    font-family: Anton, sans-serif;
+    margin-top: 1.5rem;
+    padding: 1.2rem 3rem;
+}
+
+.banner-btn:hover {
+    background-color: #00000000;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: 700;
+    font-family: Anton, sans-serif;
+    margin-top: 1.5rem;
+    padding: 1.2rem 3rem;
+}
+
+
+.banner-btn2 {
+    background-color: #00000000;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: 700;
+    font-family: Anton, sans-serif;
+    margin-top: 1.5rem;
+    padding: 1.2rem 3rem;
+}
+
+.banner-btn2:hover {
+    background-color: #f04f23;
+    border: 1px solid #f04f23;
+    border-radius: 5px;
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: 700;
+    font-family: Anton, sans-serif;
+    margin-top: 1.5rem;
+    padding: 1.2rem 3rem;
+}
+
+
+.ab-btn {
+    border-radius: 10px;
+    color: #fff !important;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 6px 0;
+    width: 100px;
+    background-color: #f04f23;
+    margin-top: 3rem;
+}
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .banner-btn {
+        background-color: #f04f23;
+        border: 1px solid #f04f23;
+        border-radius: 5px;
+        font-size: 1.1rem;
+        color: #fff;
+        font-weight: 700;
+        font-family: Anton, sans-serif;
+        margin-top: 1.5rem;
+        padding: 1rem 1.2rem;
+        margin-left: 10px;
+    }
+
+    .banner-btn2 {
+
+        padding: 1rem 1.4rem;
+        margin-left: -10px;
+        font-size: 1.1rem;
+    }
+
+    .banner-btn2:hover {
+        background-color: #f04f23;
+        border: 1px solid #f04f23;
+        border-radius: 5px;
+        font-size: 1.1rem;
+        color: #fff;
+        font-weight: 700;
+        font-family: Anton, sans-serif;
+        margin-top: 1.5rem;
+        padding: 1rem 1.2rem;
+    }
+
+    .h-img {
+        height: 300px !important;
+    }
+
+    .ab-btn {
+        margin-top: -2rem;
+    }
+
+
+
+}
+
+
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .h-img {
+        height: 400px !important;
+    }
+
+    .ab-btn {
+        margin-top: 0rem;
+    }
+
+    .banner-btn2 {
+        background-color: #00000000;
+        border: 1px solid white;
+        border-radius: 5px;
+        font-size: 1.8rem;
+        color: #fff;
+        font-weight: 700;
+        font-family: Anton, sans-serif;
+        margin-top: 1.5rem;
+        padding: 1.1rem 1.5rem;
+    }
+
+    .banner-btn {
+        background-color: #f04f23;
+        border: 1px solid #f04f23;
+        border-radius: 5px;
+        font-size: 1.8rem;
+        color: #fff;
+        font-weight: 700;
+        font-family: Anton, sans-serif;
+        margin-top: 1.5rem;
+        padding: 1.2rem 2.5rem;
+    }
+
+
+}
+
+
+
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+    .ab-btn {
+        margin-top: 0rem;
+    }
+}

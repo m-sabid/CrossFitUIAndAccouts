@@ -1,0 +1,62 @@
+.top-banner{
+    background-color: #444;
+}
+
+
+.ab-t-h1 {
+    font-size: 54px;
+    width: 80%;
+}
+
+.ab-t-p {
+    font-size: 18px;
+    font-weight: 700;
+    margin: auto;
+    width: 60%;
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 480px){
+    .ab-t-h1, .ab-t-p {
+        text-align: left;
+        width: 100%;
+    }
+
+    .ab-t-h1 {
+        font-size: 34px;
+    }
+
+
+    .ab-t-p {
+        font-size: 15px;
+        font-weight: 700;
+        margin: auto;
+    }
+   
+}
+
+
+
+@media only screen and (min-width: 481px) and (max-width:  768px) {
+    .ab-t-h1 {
+        font-size: 54px;
+        width: 90%;
+    }
+
+    .ab-t-p {
+        font-size: 18px;
+        font-weight: 700;
+        margin: auto;
+        width: 100%;
+    }
+}
+
+
+@media only screen and (min-width: 769px) and (max-width:  1200px) {
+    .ab-t-p {
+        font-size: 20px;
+        font-weight: 700;
+        margin: auto;
+        width: 100%;
+    }
+}

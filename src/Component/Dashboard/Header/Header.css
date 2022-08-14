@@ -1,0 +1,61 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0 10px 0;
+}
+.header h2 {
+  /* Hello, Manager! */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.09em;
+}
+.nameDateMsg {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#date {
+  /* 12 Apr 2022, Tuesday */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  color: #908f8c;
+}
+#bell {
+  color: #ff8315;
+  margin: 0 30px;
+  background-color: #ffeeea;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* Span */
+#hello {
+  color: #908f8c;
+}
+@media only screen and (max-width: 600px) {
+  #hello {
+    display: none; 
+  }
+  .header h2 {
+    font-size: 0.8rem;
+    border-bottom: 1px solid;
+  }
+  #date{
+    font-size: 0.6rem;
+  }
+  #bell{
+  margin: 0 10px;
+  background-color: #ffeeea;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 0.6rem;
+  cursor: pointer;
+  }
+}

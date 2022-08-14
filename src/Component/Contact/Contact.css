@@ -1,0 +1,82 @@
+.c-h1 {
+    font-size: 41px;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+}
+
+.c-h3 {
+    font-size: 30px;
+    text-align: left;
+    font-weight: 700;
+}
+
+.c-img {
+    margin-left: -300px;
+}
+
+
+.c-join-bg {
+    background-color: rgba(0, 0, 0, 0.887);
+    padding-bottom: 50px;
+}
+
+.c-f-h1 {
+    font-size: 48px;
+    text-align: left;
+    color: white;
+}
+
+.c-f-p {
+    color: white;
+    text-align: left;
+}
+
+
+.c-map {
+    height: 500px !important;
+}
+
+.cf-input {
+    width: 100%;
+    outline: none !important;
+    border-bottom: 1px solid white !important;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    color: white;
+    margin-top: 20px;
+}
+
+.cf-s-btn {
+    border-radius: 0px;
+    color: #fff !important;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 10px 30px;
+    background-color: #f04f23;
+    border: 1px solid #f04f23;
+    margin-top: 2rem;
+}
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .c-img {
+        margin-left: -200px;
+    }
+}
+
+
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .c-img {
+        margin-left: -100px;
+    }
+}
+
+
+
+@media only screen and (min-width: 769px) and (max-width:  1200px) {
+    .c-img {
+        margin-left: -230px;
+    }
+}
