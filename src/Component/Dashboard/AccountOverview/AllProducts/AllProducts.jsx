@@ -222,7 +222,7 @@ const AllProducts = () => {
             <p>Current Balance</p>
             <h5 style={{ fontWeight: "700" }}>
               {/* ${currentBalance} */}
-              $10000
+              ৳ 10000
             </h5>
           </div>
           <div className="b-1">
@@ -245,7 +245,7 @@ const AllProducts = () => {
               Total Expense
             </p>
             <h5 style={{ fontWeight: "700", color: "#F04F23" }}>
-              {/* ${totalExpense} */}$ 30000
+              {/* ${totalExpense} */}৳  30000
             </h5>
           </div>
           <div className="b-3">
@@ -265,7 +265,7 @@ const AllProducts = () => {
             {/* add income modal */}
             <p style={{ color: "#7CBC71", marginTop: "-30px" }}>Total Income</p>
             <h5 style={{ fontWeight: "700", color: "#7CBC71" }}>
-              ${totalIncome}
+            ৳ {totalIncome}
             </h5>
           </div>
         </div>
@@ -281,7 +281,7 @@ const AllProducts = () => {
                     <p>{dt.user}</p>
                 </div>
                 <div className="ms-5">
-                    <p>${dt.total_price}</p>
+                    <p>৳ {dt.total_price}</p>
                 </div>
                 <div className="ms-5">
                     <p>{dt.payment_type_value}</p>

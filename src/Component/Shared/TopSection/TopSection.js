@@ -9,8 +9,6 @@ import AuthUser from '../../Dashboard/LoginLogOut/AuthUser/AuthUser';
 
 const TopSection = () => {
   const { userRole } = AuthUser();
-//   const role = setUserRole();
-  console.log(userRole);
     return (
         <div>
             <div className='top-section'>

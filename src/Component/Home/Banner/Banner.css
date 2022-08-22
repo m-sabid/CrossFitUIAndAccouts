@@ -5,6 +5,18 @@
     padding-bottom: 8rem;
 }
 
+.h-img{
+    overflow: hidden;
+    border-radius: 20px;
+}
+.about_home > h1, h3{
+    margin: 20px 0 0 30px;
+    text-align: start;
+}
+.about_home > h1 {
+    color: #FBB848;
+    border-bottom: 1px solid #FBB848;
+}
 .banner-btn {
     background-color: #f04f23;
     border: 1px solid #f04f23;
@@ -65,40 +77,54 @@
     background-color: #f04f23;
     margin-top: 3rem;
 }
+.tagLine{
+    color: white;
+    font-size: 3rem;
+    margin-top: 5rem;
+    font-family: "Roboto",sans-serif;
+    font-weight: 700;
+}
 
 
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
+    .tagLine{
+        color: white;
+        font-size: 2rem;
+        margin-top: 0px;
+        font-family: "Roboto",sans-serif;
+        font-weight: 700;
+    }
     .banner-btn {
         background-color: #f04f23;
         border: 1px solid #f04f23;
         border-radius: 5px;
-        font-size: 1.1rem;
+        font-size: 1rem;
         color: #fff;
         font-weight: 700;
         font-family: Anton, sans-serif;
         margin-top: 1.5rem;
-        padding: 1rem 1.2rem;
+        padding: 1rem;
         margin-left: 10px;
     }
 
     .banner-btn2 {
 
-        padding: 1rem 1.4rem;
+        padding: 1rem;
         margin-left: -10px;
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     .banner-btn2:hover {
         background-color: #f04f23;
         border: 1px solid #f04f23;
         border-radius: 5px;
-        font-size: 1.1rem;
+        font-size: 1rem;
         color: #fff;
         font-weight: 700;
         font-family: Anton, sans-serif;
         margin-top: 1.5rem;
-        padding: 1rem 1.2rem;
+        padding: 1rem;
     }
 
     .h-img {

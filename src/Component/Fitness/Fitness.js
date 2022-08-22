@@ -19,7 +19,7 @@ const Fitness = () => {
                 <section>
                     <div className='kik-flex'>
                         <div className='mt-5 pt-5'>
-                            <h1 className='kik-h1'>KICK BOXING</h1>
+                            <h1 className='kik-h1' id='c-b'>KICK <br /> BOXING</h1>
                             <p className='k-p'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             <div className='d-flex justify-content-left'>
                                 <Nav.Link><button className='kik-btn'>Get Started</button> </Nav.Link>
@@ -41,7 +41,7 @@ const Fitness = () => {
                             </div>
                         </div>
                         <div className='mt-5 pt-5'>
-                            <h1 className='nu-h1'>NUTRIT<br />ION</h1>
+                            <h1 className='nu-h1' id='c-b'>NUTRITION</h1>
                             <p className='nu-p'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             <div className='d-flex justify-content-right n-b'>
                                 <Nav.Link><button className='nu-btn'>Get Started</button> </Nav.Link>

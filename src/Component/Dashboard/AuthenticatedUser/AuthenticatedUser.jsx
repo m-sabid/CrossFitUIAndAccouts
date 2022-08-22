@@ -18,6 +18,7 @@ import AccountsSalary from "../ProfilePage/AccountsSalary/AccountsSalary";
 import PettyCash from "../Expense/PettyCash/PettyCash";
 import Instruments from "../Expense/Instruments/Instruments";
 import ExpenseDetails from "../Expense/ExpenseDetails/ExpenseDetails";
+import Login from "../../LogIn/Login";
 
 
 const AuthenticatedUser = () => {
@@ -40,7 +41,8 @@ const AuthenticatedUser = () => {
               <Route path="/expense/pettycash" element={<PettyCash />} />{" "}
               <Route path="/expense/instruments" element={<Instruments />} />{" "}
               <Route path="/overview" element={<AllProducts />} />{" "}
-              <Route path="/expense/:id" element={<ExpenseDetails />} />{" "}
+              <Route path="/expense/:id" element={<ExpenseDetails />} />
+              <Route path="*" element={<Login />} />
             </Routes>
           <div className="DashboardFooter">
             <FooterSec />

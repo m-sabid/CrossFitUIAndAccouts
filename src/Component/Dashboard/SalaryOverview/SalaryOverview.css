@@ -1,29 +1,51 @@
-.ava-img{
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    margin-top: -10px;
+.ava-img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-top: -10px;
 }
-.SPaid{
-    font-weight: 700;
-    color: green;
+.SPaid {
+  font-weight: 700;
+  color: green;
 }
-.SHold{
-    font-weight: 700;
-    color: yellow;
+.SHold {
+  font-weight: 700;
+  color: yellow;
 }
-.SUnpaid{
-    font-weight: 700;
-    color: red;
+.SUnpaid {
+  font-weight: 700;
+  color: red;
+}
+.lCompSal{
+  font-size: 16px;
+  margin-top: -30px;
+  margin-bottom: 20px;
 }
 @media only screen and (max-width: 600px) {
-    #salaryOverview {
-        font-size: 0.8rem;
-    }
-    .b-3{
-        height: -1000px;
-    }
-    .b-box{
-        margin-right: 5px;
-    }
+  #salaryOverview {
+    font-size: 0.8rem;
+  }
+  #expenseRes {
+    margin-top: 0px !important;
+  }
+  .b-1 {
+    height: auto;
+    font-size: 0.8rem;
+  }
+  .lCompSal{
+    font-size: 0.8rem;
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+  .my-STbl{
+    width: 100%;
+    font-size: 0.8rem;
+  }
+  .b-3 {
+    height: auto;
+    font-size: 0rem;
+  }
+  .b-box {
+    margin-right: 5px;
+  }
 }

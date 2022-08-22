@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from "react";
 import "./AccountOverview.css";
-import { Button } from "react-bootstrap";
+import { Button, Table } from "react-bootstrap";
 import AuthUser from "../LoginLogOut/AuthUser/AuthUser";
-import { MyVerticallyCenteredModal, MyIncomeModals } from "./Modal/ModalForForm"
+import {
+  MyVerticallyCenteredModal,
+  MyIncomeModals,
+} from "./Modal/ModalForForm";
 
 const AccountOverview = () => {
   const { getToken } = AuthUser();
@@ -70,6 +73,7 @@ const AccountOverview = () => {
   }, []);
   // expense
 
+  
   useEffect(() => {
     const expenseUrl = "https://gym-management97.herokuapp.com/api/expense";
     fetch(expenseUrl, {
@@ -99,7 +103,6 @@ const AccountOverview = () => {
   // Current Balance
   const currentBalance = totalIncome - totalExpense;
 
-
   // Date
   let today = new Date();
   const dd = String(today.getDate()).padStart(2, "0");
@@ -109,19 +112,22 @@ const AccountOverview = () => {
 
   today = dd + " " + mm + " " + yyyy + ", " + dayName;
   // Date
-
+  // console.log("overview", overview);
+  
   return (
     <>
       <div>
         <div className="mt-3">
-          <h6 className="form-h6" id="accountOverview">Account Overview </h6>
+          <h6 className="form-h6" id="accountOverview">
+            Account Overview{" "}
+          </h6>
         </div>
       </div>
       <div className="b-box">
         <div className="d-flex justify-content-between">
           <div className="b-1">
             <p>Current Balance</p>
-            <h5 style={{ fontWeight: "700" }}>${currentBalance}</h5>
+            <h5 style={{ fontWeight: "700" }}>৳ {currentBalance}</h5>
           </div>
           <div className="b-1">
             {/* Add Expense BS Modals*/}
@@ -139,11 +145,11 @@ const AccountOverview = () => {
             {/* Add Expense BS Modals*/}
             {/* Add Expense BS Modals*/}
             {/* Add Expense BS Modals*/}
-            <p style={{ color: "#F04F23", marginTop: "-30px" }} id="incomeRes">
+            <p style={{ color: "#F04F23", marginTop: "-30px" }} id="expenseRes">
               Total Expense
             </p>
             <h5 style={{ fontWeight: "700", color: "#F04F23" }}>
-              ${totalExpense}
+              ৳ {totalExpense}
             </h5>
           </div>
           <div className="b-3">
@@ -164,9 +170,11 @@ const AccountOverview = () => {
             {/* add income modal */}
             {/* add income modal */}
             <div>
-              <p style={{ color: "#7CBC71", marginTop: "-30px" }} id="incomeRes">Total Income</p>
+              <h5 className="lComp" style={{ color: "#7CBC71" }}>
+                Total Income
+              </h5>
               <h5 style={{ fontWeight: "700", color: "#7CBC71" }}>
-                ${totalIncome}
+                ৳ {totalIncome}
               </h5>
             </div>
           </div>
@@ -182,7 +190,7 @@ const AccountOverview = () => {
               <input
                 className="date-input ms-4 resDate"
                 type="date"
-                onChange={getDate}
+                onBlur={getDate}
               />
               <button className="allBtn" onClick={getAllOverview}>
                 All
@@ -191,27 +199,37 @@ const AccountOverview = () => {
           </div>
         </div>
       </div>
-      {overview.map((dt) => (
-        <>
-          <div key={dt.id} className="mt-4 my-Tbl">
-            <div className="sel-list d-flex justify-content-between">
-              <div className="ms-5">
-                <p>{dt.order_date}</p>
-              </div>
-              <div className="ms-5">
-                <p>{dt.user}</p>
-              </div>
-              <div className="ms-5">
-                <p>${dt.total_price}</p>
-              </div>
-              <div className="ms-5">
-                <p className="responsive_none">{dt.payment_type_value}</p>
-              </div>
-              {/* <button className="detail-btn ms-5 responsive_none">Details</button> */}
-            </div>
-          </div>
-        </>
-      ))}
+      {/* Bootstrap table */}
+      <div className="row d-flex justify-content-between my-Tbl">
+        <div className="col-md-12 col-12 mt-5">
+          <Table striped responsive="sm">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Order Date</th>
+                <th>Total Price</th>
+                <th>Payment Type </th>
+              </tr>
+            </thead>
+            <tbody>
+              {overview.map((dt) => (
+                <>
+                  <tr key={dt.id} style={{ lineHeight: "50px" }}>
+                    <td>{dt.id}</td>
+                    <td>{dt.order_date}</td>
+                    <td>৳ {parseInt(dt.total_price)}</td>
+                    <td>
+                      {" "}
+                      <b> {dt.payment_type_value} </b>{" "}
+                    </td>
+                  </tr>
+                </>
+              ))}
+            </tbody>
+          </Table>
+        </div>
+      </div>
+      {/* Bootstrap table */}
     </>
   );
 };

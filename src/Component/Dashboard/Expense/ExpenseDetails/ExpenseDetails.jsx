@@ -119,7 +119,7 @@ const ExpenseDetails = () => {
           <hr />
           <img src={dt.image} alt="detailsImage" />
           <ul>
-            <li>AMOUNT : <b> { dt.amount}</b></li>
+            <li>AMOUNT : <b>৳  { dt.amount}</b></li>
             <li>MESSAGE : <b> { dt.message}</b></li>
           </ul>
         </div>

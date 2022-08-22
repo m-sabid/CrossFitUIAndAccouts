@@ -136,7 +136,7 @@ const PettyCash = () => {
                 <p>{dt.expense_date}</p>
               </div>
               <div className="ms-5">
-                <p>{dt.amount}</p>
+                <p>৳ {dt.amount}</p>
               </div>
               <div className="ms-5">
                 <p>{dt.message}</p>

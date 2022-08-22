@@ -1,6 +1,6 @@
 import "./App.css";
 import Home from "./Component/Home/Home";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import AboutUs from "./Component/AboutUs/AboutUs";
 import CrossFit from "./Component/CrossFit/CrossFit";
 import Trainers from "./Component/Trainers/Trainers";
@@ -11,11 +11,13 @@ import Login from "./Component/LogIn/Login";
 import Register from "./Component/Register/Register";
 import Shop from "./Component/Shop/Shop";
 import AuthenticatedUser from "./Component/Dashboard/AuthenticatedUser/AuthenticatedUser";
+import AuthUser from "./Component/Dashboard/LoginLogOut/AuthUser/AuthUser";
 
 function App() {
+  const { userRole } = AuthUser();
+  console.log(userRole)
   return (
     <div className="App">
-      <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about-us" element={<AboutUs />} />
@@ -29,9 +31,8 @@ function App() {
           <Route path="/shop" element={<Shop />} />
         </Routes>
         <Routes>
-          <Route path="/dashboard/*" element={<AuthenticatedUser />} />
+          <Route path="/dashboard/*" element={userRole === "admin" ? <AuthenticatedUser /> : <Login />} />
         </Routes>
-      </BrowserRouter>
     </div>
   );
 }

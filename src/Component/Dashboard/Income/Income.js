@@ -66,7 +66,7 @@ const Income = () => {
                 <p>{dt.user}</p>
               </div>
               <div className="ms-5">
-                <p>${dt.total_price}</p>
+                <p>৳ {dt.total_price}</p>
               </div>
               <div className="ms-5">
                 <p> <b> {dt.payment_type_value} </b></p>

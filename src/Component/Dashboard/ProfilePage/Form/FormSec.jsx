@@ -2,34 +2,28 @@ import React from "react";
 import { Col, Row } from "react-bootstrap";
 import "./FormSec.css";
 
-const FormSec = () => {
+const FormSec = (props) => {
+  const updateData = props.update;
+  console.log(updateData);
+
+  let x = {
+    
+  }
+
+
   return (
     <div className="FormSec">
       <Row>
-        <Col md={6}>
+        <Col md={12}>
           <div className="inputs1">
-            <label htmlFor="">Info 1</label>
-
-            <input type="text" placeholder="First Name " />
-            <input type="text" placeholder="Info " />
-            <input type="text" placeholder="Info 1 " />
-            <label htmlFor="">Info 1</label>
-            <input type="text" placeholder="Info 2 " />
-            <input type="text" placeholder="Info 3 " />
-            <input type="text" placeholder="Info2 4 " />
-          </div>
-        </Col>
-        <Col md={6}>
-          <div className="inputs1">
-            <label htmlFor="">Info 1</label>
-
-            <input type="text" placeholder="First Name " />
-            <input type="text" placeholder="Info " />
-            <input type="text" placeholder="Info 1 " />
-            <label htmlFor="">Info 1</label>
-            <input type="text" placeholder="Info 2 " />
-            <input type="text" placeholder="Info 3 " />
-            <input type="text" placeholder="Info2 4 " />
+            <label htmlFor="">Name</label>
+            <input type="text" value={updateData.name} />
+            <label htmlFor="">Email</label>
+            <input type="text" value={updateData.email} />
+            <label htmlFor="">Phone</label>
+            <input type="text" value={updateData.phone} />
+            <label htmlFor="">Profile Image</label>
+            <input type="file" name="profile image" id="" />
           </div>
         </Col>
       </Row>

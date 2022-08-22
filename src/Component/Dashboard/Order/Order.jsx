@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { FaShoppingCart } from "react-icons/fa";
 import "./Order.css";
+import { Table } from "react-bootstrap";
 import { NavLink, Outlet } from "react-router-dom";
 import AuthUser from "../LoginLogOut/AuthUser/AuthUser";
 
@@ -23,6 +24,7 @@ const Order = () => {
       .then((res) => res.json())
       .then((data) => setProducts(data.data));
   }, []);
+  console.log("packages", packages);
   // Package
   useEffect(() => {
     const url = "https://gym-management97.herokuapp.com/api/package_order";
@@ -36,7 +38,6 @@ const Order = () => {
       .then((res) => res.json())
       .then((data) => setPackages(data.data));
   }, []);
-  console.log(packages);
 
   return (
     <>
@@ -67,68 +68,70 @@ const Order = () => {
         <NavLink to="/dashboard/order/packages" className="fil">
           Packages
         </NavLink>
-
-        {/* <div>
-          <button className="fil">
-            <FiFilter className="me-2" />
-            Filter list
-          </button>
-        </div> */}
       </div>
 
-      {products.map((dt) => (
-        <>
-          {dt.order_details.map((item) => (
-            <>
-              <div className="sel-list myFlex"> 
-                <div className="ms-5 res_none">
-                  <p>Product Id: {item.id}</p>
-                </div>
-                <div className="ms-5">
-                  <p  className="p">{item.name}</p>
-                </div>
-                <div className="ms-5">
-                  <p>৳ {item.price}</p>
-                </div>
-                <div className="ms-5">
-                  <p
-                    className={`${
-                      item.status === "complete"
-                        ? "OComplete"
-                        : item.status === "processing"
-                        ? "OProcessing"
-                        : item.status === "hold"
-                        ? "OHold"
-                        : ""
-                    }`}
-                  >
-                    {item.status}
-                  </p>
-                </div>
-              </div>
-            </>
-          ))}
-        </>
-      ))}
+      {/* Bootstrap table */}
+      <div className="row d-flex justify-content-between my-STbl">
+        <div className="col-md-12 col-12 mt-5">
+          <Table striped responsive="sm">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Title</th>
+                <th>Date</th>
+                <th>Amount</th>
+                <th>Payment Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              {/* Products */}
+              {products.map((dt) => (
+                <>
+                  {dt.order_details.map((items) => (
+                    <tr style={{ lineHeight: "50px" }}>
+                      <>
+                        <td>{items.id}</td>
+                        <td>{items.name}</td>
+                        <td>{dt.order_date}</td>
+                        <td>৳ {items.price}</td>
+                        <td
+                          className={`${
+                            items.status === "Complete"
+                              ? "OPaid"
+                              : items.status === "processing"
+                              ? "OHold"
+                              : items.status === "Un paid"
+                              ? "OUnpaid"
+                              : ""
+                          }`}
+                        >
+                          {items.status}
+                        </td>
+                      </>
+                    </tr>
+                  ))}
+                </>
+              ))}
+              {/* Products */}
+              {/*  */}
+              {/* packages */}
+              {
+                packages.map(pk => (
+                  <tr key={pk.id} style={{ lineHeight: "50px" }}>
+                    <td>{pk.id}</td>
+                    <td>{pk.package.package_type.package_title}</td>
+                    <td>{pk.order_date}</td>
+                    <td>৳ {pk.package.discounted_price}</td>
+                    <td>{pk.status}</td>
+                  </tr>
+                ))
+              }
+            </tbody>
+          </Table>
+        </div>
+      </div>
       {/* Packages */}
-      {packages.map((dt) => (
-        <>
-          <div className="sel-list myFlex">
-            <div className="ms-5 res_none">
-              <p>Package Id: {dt.id}</p>
-            </div>
-            <div className="ms-5">
-              <p className="p">{dt.package.package_type.package_title}</p>
-            </div>
-            <div className="ms-5">
-              <p>৳ {parseInt(dt.package.discounted_price)}</p>
-            </div>
-            <div className="ms-5">
-              <p className="OComplete">Complete</p>
-            </div>
-          </div>
-        </>
-      ))}
+      {/* Bootstrap table */}
 
       <Outlet />
     </>

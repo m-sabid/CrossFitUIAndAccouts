@@ -12,8 +12,9 @@
   background-color: #dfdfdf3e;
 }
 .inputs1 > label {
-  border-bottom: 1px dashed red;
+  /* border-bottom: 1px dashed red; */
   width: 100%;
+  text-align: left;
   margin-bottom: 10px;
   font-family: "Helvetica Neue LT Pro";
   font-style: normal;
@@ -21,23 +22,22 @@
   font-size: 14px;
   line-height: 17px;
   text-transform: capitalize;
-
   color: #908f8c;
 }
 .update{
     justify-content: center;
     color: white;
     border-radius: 10px;
-    font-size: 22px;
+    font-size: 18px;
     margin: auto;
     display: flex;
     outline: none;
     border: none;
-    padding: 10px;
+    padding: 5px 10px;
     letter-spacing: 0.2rem;
     margin-top: 20px;
-    background: green;
-    width: 200px;
+    background-color: #F04F23;
+    text-transform: uppercase;
 }
 .update:hover{
     background-color: rgba(255, 0, 0, 0.716);

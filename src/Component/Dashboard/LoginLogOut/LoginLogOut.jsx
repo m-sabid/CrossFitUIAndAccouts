@@ -13,7 +13,7 @@ export default function LoginLogOut() {
   const submitForm = () => {
     // api call
     http.post("/auth/", { email: email, password: password }).then((res) => {
-      // console.log(res);
+      console.log(res);
       setToken(res.data.data.email, res.data.data.access, res.data.data.role);
       // setUserRole(res.data.data.role);
     });

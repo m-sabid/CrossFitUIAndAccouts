@@ -1,142 +1,148 @@
 .b-box {
-    background: rgba(251, 184, 72, 0.25);
-    height: 180px;
-    padding: 30px;
+  background: rgba(251, 184, 72, 0.25);
+  height: 180px;
+  padding: 30px;
 }
 
 .b-1 {
-    border-right: 2px solid #FFFFFF;
-    height: 120px;
-    width: 33%;
-    padding-top: 10px;
-    text-align: center;
+  border-right: 2px solid #ffffff;
+  height: 120px;
+  width: 33%;
+  padding-top: 10px;
+  text-align: center;
 }
-
 .b-3 {
-    height: 120px;
-    width: 33%;
-    padding-top: 10px;
-    text-align: center;
+  height: 120px;
+  width: 33%;
+  padding-top: 10px;
+  text-align: center;
 }
 
-#date, #bodyDate {
-    /* 12 Apr 2022, Tuesday */
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    letter-spacing: 0.1em;
-    color: #908f8c;
+#date,
+#bodyDate {
+  /* 12 Apr 2022, Tuesday */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  color: #908f8c;
 }
 
 .time-fl {
-    margin-top: 20px;
-    height: 60px;
-    padding-top: 14px;
+  margin-top: 20px;
+  height: 60px;
+  padding-top: 14px;
 }
 
 .date-input {
-    border-radius: 10px;
-    width: 180px;
-    height: 35px;
-    margin-top: -10px;
-    padding-left: 5px;
-    padding-right: 5px;
-    color: #908f8c;
-    border: 1px solid #908f8c;
-    outline: none;
+  border-radius: 10px;
+  width: 180px;
+  height: 35px;
+  margin-top: -10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #908f8c;
+  border: 1px solid #908f8c;
+  outline: none;
 }
 
 .sel-list {
-    border-bottom: 1px solid #C4C4C4;
-    height: 60px;
-    padding-top: 20px;
+  border-bottom: 1px solid #c4c4c4;
+  height: 60px;
+  padding-top: 20px;
 }
 
 .fil {
-    border: 1px solid black;
-    padding: 5px 5px;
-    border-radius: 5px;
+  border: 1px solid black;
+  padding: 5px 5px;
+  border-radius: 5px;
 }
-
 .detail-btn {
-    background-color: #FBB848;
-    border: none;
-    padding: 5px 25px;
-    color: white;
-    margin-top: -10px !important;
-    border-radius: 5px;
-    height: 40px;
-
+  background-color: #fbb848;
+  border: none;
+  padding: 5px 25px;
+  color: white;
+  margin-top: -10px !important;
+  border-radius: 5px;
+  height: 40px;
 }
 
 .ad-top {
-    color: white;
-    width: 21px;
-    height: 22px;
-    font-weight: 700;
-    margin-left: 300px !important;
+  color: white;
+  height: 22px;
+  font-weight: 700;
+  text-align: right;
+  margin-right: 5%;
 }
 
 .allBtn {
-    background-color: #FBB848;
-    padding: 5px 20px;
-    border: none;
-    color: white;
-    margin-left: 20px;
-    border-radius: 5px;
+  background-color: #fbb848;
+  padding: 5px 20px;
+  border: none;
+  color: white;
+  margin-left: 20px;
+  border-radius: 5px;
+}
+.lComp{
+  font-size: 16px;
+  margin-top: -30px;
+  margin-bottom: 15px;
 }
 
-@media only screen and (max-width: 600px) {
-    #accountOverview {
-        font-size: 0.8rem;
-    }
+@media only screen and (max-width: 800px) {
+  #accountOverview {
+    font-size: 0.8rem;
+  }
 
-    .b-1 {
-        height: auto;
-        font-size: 0.8rem;
-    }
+  .b-1 {
+    height: auto;
+    font-size: 0.8rem;
+  }
 
-    .b-3 {
-        height: auto;
-        font-size: 0.rem;
-    }
+  .b-3 {
+    height: auto;
+    font-size: 0rem;
+  }
 
-    .b-box {
-        background: rgba(251, 184, 72, 0.25);
-        height: auto;
-        padding: 10px 0 20px 0;
-    }
+  .b-box {
+    background: rgba(251, 184, 72, 0.25);
+    height: auto;
+    padding: 10px 0 20px 0;
+  }
 
-    .ad-top {
-        display: none;
-    }
+  .ad-top {
+    display: none;
+  }
 
-    #incomeRes {
-        margin-top: 0px !important;
-    }
+  #expenseRes {
+    margin-top: 0px !important;
+  }
 
-    #bodyDate {
-        display: none;
-    }
-    .my-Tbl{
-        font-size: 0.7rem;
-        width: 100%;
-    }
-    .responsive_none{
-        display: none;
-    }
-    .resDate{
-        font-size: 0.8rem;
-        width: 50%;
-    }
-    .allBtn {
-        background-color: #FBB848;
-        padding: 2.5px 10px;
-        border: none;
-        color: white;
-        margin-left: 10px;
-        border-radius: 5px;
-        float: right;
-    }
+  #bodyDate {
+    display: none;
+  }
+  .my-Tbl {
+    font-size: 0.7rem;
+    /* width: 100%; */
+  }
+  .responsive_none {
+    display: none;
+  }
+  .resDate {
+    font-size: 0.8rem;
+    width: 50%;
+  }
+  .allBtn {
+    background-color: #fbb848;
+    padding: 2.5px 10px;
+    border: none;
+    color: white;
+    margin-left: 10px;
+    border-radius: 5px;
+    float: right;
+  }
+  .lComp{
+    margin-top: 0px;
+  }
 }

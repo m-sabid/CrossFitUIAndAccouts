@@ -5,3 +5,11 @@
     font-weight: 700;
     text-align: left;
 }
+tfoot{
+    text-align: start;
+    margin: 0px;
+}
+.p_left{
+    text-align: start;
+    font-size: 1.2rem;
+}
